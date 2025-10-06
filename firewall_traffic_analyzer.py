@@ -21,8 +21,8 @@ nerd = int(input(f'Enter the port number (e.g., 80, 22, 443, 3389): '))
 nerd1 = int(input(f'Enter the data transfer size in megabytes (MB): ')) 
 print()
 print("FIREWALL LOG:")
-print(f'Port: {nerd}, Transfer Size: {nerd1}')
-if nerd == 80 and nerd1 >= 100:
+print(f'Port: {nerd}, Transfer Size: {nerd1} MB')
+if nerd == 80 and nerd1 > 100:
   print('MEDIUM RISK: Large unencrypted data transfer detected.')
   print("------------------------")
 elif nerd1 == 443:

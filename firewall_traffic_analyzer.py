@@ -28,19 +28,19 @@ print("FIREWALL LOG:")
 print(f'Port: {nerd}, Transfer Size: {nerd1} MB')
 
 if nerd == 80 and nerd1 > 100:
-  print('MEDIUM RISK: Large unencrypted data transfer detected.')
+  print('Risk Assessment: MEDIUM RISK: Large unencrypted data transfer detected.')
   print("------------------------")
 
 elif nerd == 443:
-  print('LOW RISK: Secure encrypted transfer detected.')
+  print('Risk Assessment: LOW RISK: Secure encrypted transfer detected.')
   print("------------------------")
 
 elif (nerd == 22 or nerd == 3389) and nerd1 >= 100:
-  print('HIGH RISK: Potential unauthorized remote access detected!')
+  print('Risk Assessment: HIGH RISK: Potential unauthorized remote access detected!')
   print("------------------------")
 
 else:
-   print('UNKNOWN: Unrecognized traffic pattern.')
+   print('Risk Assessment: UNKNOWN: Unrecognized traffic pattern.')
    print("------------------------")
 
 
@@ -120,7 +120,7 @@ Risk Assessment: UNKNOWN: Unrecognized traffic pattern.
 1. Did you get tripped up using the `or` or `and` operators? If so, how?
 
 
-
+I am still getting triped using thoes at this point in my python journy.
 
 
 

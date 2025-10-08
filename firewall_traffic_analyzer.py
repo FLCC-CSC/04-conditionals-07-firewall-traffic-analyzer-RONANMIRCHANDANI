@@ -16,21 +16,29 @@
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
 print("=== Network Traffic Security Analyzer ===")
+
 print()
+
 nerd = int(input(f'Enter the port number (e.g., 80, 22, 443, 3389): ')) 
 nerd1 = int(input(f'Enter the data transfer size in megabytes (MB): ')) 
+
 print()
+
 print("FIREWALL LOG:")
 print(f'Port: {nerd}, Transfer Size: {nerd1} MB')
+
 if nerd == 80 and nerd1 > 100:
   print('MEDIUM RISK: Large unencrypted data transfer detected.')
   print("------------------------")
-elif nerd1 == 443:
+
+elif nerd == 443:
   print('LOW RISK: Secure encrypted transfer detected.')
   print("------------------------")
+
 elif (nerd == 22 or nerd == 3389) and nerd1 >= 100:
   print('HIGH RISK: Potential unauthorized remote access detected!')
   print("------------------------")
+
 else:
    print('UNKNOWN: Unrecognized traffic pattern.')
    print("------------------------")
